@@ -12,14 +12,12 @@ function check() {
     ) {
       document.getElementsByClassName("error-number")[0].style.display =
         "block";
-      document.getElementsByClassName("error-number")[0].style.opacity = "1";
       document.getElementsByClassName("success")[0].style.display = "";
-      document.getElementsByClassName("success")[0].style.opacity = "0";
+      document.getElementsByClassName("error")[2].style.display = "";
     } else {
       document.getElementsByClassName("error-number")[0].style.display = "";
-      document.getElementsByClassName("error-number")[0].style.opacity = "0";
       document.getElementsByClassName("success")[0].style.display = "block";
-      document.getElementsByClassName("success")[0].style.display = "1";
+      document.getElementsByClassName("error")[2].style.display = "";
     }
   } else {
     if (number === "") {
